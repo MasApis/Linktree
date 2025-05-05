@@ -9,7 +9,8 @@
 
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: grey;
+    background-color: #0118D8;
+    color: #FFF8F8;
 }
 
 .container {
@@ -30,7 +31,7 @@ header .logo {
     width: 300px;
     border-radius: 50%;
     padding: 1em;
-    background-color: black;
+    background-color: #E9DFC3;
 }
 
 header .title-1 {
@@ -83,25 +84,64 @@ main .linktree {
     font-size: 1.5em;
     padding: 1em;
     font-weight: bold;
-    color: black;
+    color: #FFF8F8;
     border-radius: 2em;
     text-align: center;
     display: inline-block;
-    border: 10px solid black;
+    border: 10px solid #E9DFC3;
     transition: all 0.5s ease-in-out;
 }
 
 .linktree :hover {
-    background-color: black;
+    background-color: #1B56FD;
     color: white;
     border-color: white;
 }
 
 footer {
-    background-color: black;
+    background-color: #1B56FD;
     padding: 2em;
     font-size: 1.5em;
     font-weight: bold;
     color: white;
     text-align: center;
+}
+
+/* Responsive mobile */
+@media only screen and (max-width: 800px) {
+    header .logo {
+        width: 200px;
+        padding: 0.5em;
+    }
+    
+    header .title-1 {
+        font-size: 1.5em;
+    }
+    
+    header .title-2 {
+        font-size: 1em;
+    }
+    
+    main .icon-linktree {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .icon-linktree a {
+        padding: 0.1em;
+        font-size: 2em;
+    }
+    
+    .linktree a {
+        width: 85%;
+        font-size: 1em;
+        padding: 0.5em;
+        border: 7px solid #E9DFC3;
+    }
+    
+    footer {
+        padding: 1.5em;
+        font-size: 1em;
+    }
+        
 }
